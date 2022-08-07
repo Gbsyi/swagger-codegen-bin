@@ -1,0 +1,13 @@
+[package]
+name = "swagger-codegen"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.11", features = ["json", "serde_json"]}
+tokio = { version = "1.20.1", features = ["rt-multi-thread", "macros"] }
+serde_json = {version = "1.0.82", features = ["raw_value"]}
+zip = "0.6.2"
+bytes = "1.1.0"
